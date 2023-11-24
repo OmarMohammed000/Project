@@ -1,7 +1,16 @@
 /* color pallet 
-#f0ede6 light
-#3b7d95 blue 
-#6892a0 light blue
-#96a7ab blue/gray 
-#c4bcb6 gray 
+#ebe7dc light
+#7a89a9 blue 
+#878d96
+#959284
+#a39772 brown
 */
+#frame{
+    background-color: #ebe7dc;
+}
+.nav-logo{
+    width: 130px;
+}
+#nav-active{
+    color: #a39772a9;
+}
