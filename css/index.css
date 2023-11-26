@@ -1,0 +1,53 @@
+/* Css for hero section  */
+/* background for the hero */
+.hero{
+    /* Ai can not write at all */
+    background:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0, 0.5)) ,url(/Project/Assets/a-school-in-Egypt-named-Nova-Academy\(1\).png) no-repeat center /cover;
+    height: 90vh;
+}
+/* animtion for the text to enter the site  */
+.animate {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    ;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+.vision{
+    color: whitesmoke;
+}
+.animate-words{
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+ 
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(150%);
+    
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* css for the Mission */
+.img-card{
+  width: 500px;
+  height: 200px;
+}
+@media (max-width:620px){
+  .img-card{
+  width: 200px;
+  height: 150px;
+  }
+}
