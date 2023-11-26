@@ -42,12 +42,25 @@
 }
 /* css for the Mission */
 .img-card{
-  width: 500px;
+  width: 400px;
   height: 200px;
 }
 @media (max-width:620px){
   .img-card{
   width: 200px;
   height: 150px;
+  }
+}
+#card{
+  background-color: #a39772 ;
+  color: #ebe7dc;
+}
+.img-about-us{
+  width: 450px
+}
+@media (max-width:620px){
+  .img-card{
+  width: 250px;
+  height: 100px;
   }
 }
