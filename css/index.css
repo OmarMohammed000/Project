@@ -3,7 +3,7 @@
 .hero{
     /* Ai can not write at all */
     background:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0, 0.5)) ,url(/Project/Assets/a-school-in-Egypt-named-Nova-Academy\(1\).png) no-repeat center /cover;
-    height: 90vh;
+    height: 70vh;
 }
 /* animtion for the text to enter the site  */
 .animate {
