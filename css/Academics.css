@@ -1,0 +1,26 @@
+/* css for the selection part */
+
+#selection{
+    background: #a39772;
+}
+#selection .nav-link{
+    color: whitesmoke;
+}
+#selection .active{
+    color: black;
+}
+#Curriculum-Overview h3  {
+    color: #a39772;
+    font-weight:600;
+}
+#Curriculum-Overview h2  {
+    color: #a39772;
+    font-weight: 600;
+}
+#Curriculum-Overview p {
+    color: #141823;
+}
+.card-border{
+    
+}
+
