@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Project/css/globals.css">
-    <script src="/Project/Scripts/script.js">
+    <title>Admission</title>
+    <link rel="stylesheet" href="/css/globals.css">
+    <script src="/Scripts/script.js">
     </script>
-    <link rel="stylesheet" href="/Project/css/bootstrap.css">
-    <script src="/Project/Scripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/Scripts/bootstrap.js"></script>
+   
     <script src="https://kit.fontawesome.com/9291c1d06a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/Admission.css">
 </head>
 <body id="frame">
    <section>
@@ -17,7 +19,7 @@
     
         <ul class="nav nav-tabs navgation  d-flex  justify-content-center align-items-center ps-2 pe-2  bg-body-tertiary rounded-4 mt-3">
             <li class="nav-item"><a class="navbar-brand" href="#">
-                <img src="/Project/Assets/image-removebg-preview(2).png" alt="" class="img-fluid nav-logo" >
+                <img src="/Assets/image-removebg-preview(2).png" alt="" class="img-fluid nav-logo" >
                 </a>
             </li>  
             <li class="nav-item">
@@ -27,10 +29,67 @@
                 <li class="nav-item"><a class="nav-link text-dark" href="Academics.html">Academics</a></li>
                 <li class="nav-item"><a class="nav-link text-dark active " href="Admission.html">Admission</a></li>
                 <li class="nav-item"><a class="nav-link text-dark" href="Payments-information.html">Payments information</a></li>
-                <li class="nav-item"><a class="nav-link text-primary" href="ContactUs.html.html">Contact Us</a></li>  
+                <li class="nav-item"><a class="nav-link text-primary" href="ContactUs.html">Contact Us</a></li>  
         </ul>
     
     </nav>
+   </section>
+   <section class="form container mt-5 " >
+    <h2 class="text-center">Admission form</h2>
+    <hr>
+    <form class="row g-3" action="/backend/connect.php" method="post" id="form" name="form">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Student Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" name="email" required>
+
+        </div>
+        <div class="col-12">
+          <label for="grades" class="form-label">Grade</label>
+          <input type="text" class="form-control" id="grades" placeholder="First grade" name="grade" required>
+        </div>
+        <div class="col-6">
+          <label for="Contact-number" class="form-label">Contact number</label>
+          <input type="tel" class="form-control" id="Contact-number" placeholder="01011111111" name="Contact" required>
+          <div id="NumberError" class="mt-1">
+
+          </div>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="DOB" class="form-label">Date of birth</label>
+          <input type="date" id="DOB" class="form-control" name="DOB" required>
+          <div id="DateError" >
+
+          </div>
+        </div>
+        <div class="col-md-12">
+          <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="gender" id="gender">
+            <option selected value="" disabled>Choose your gender</option>
+            <option value="Male" >Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <div id="GenderError" >
+
+          </div>
+          
+          
+        </div>
+        <div class="col-12">
+          <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Comment"></textarea>
+        
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        </div>
+        <div id="error">
+         
+        </div>
+      </form>
    </section>
    <footer class="container-fluid  text-center footer ">
     <a href="index.html" class="btn"> <h3 class="pt-2 fw-bold text-light">Nova Academy</h3>
@@ -45,11 +104,12 @@
 		<a href="Academics.html" class="btn text-light">Academics</a>
 		<a href="Admission.html" class="btn text-light">Admission</a>
 		<a href="Payments-information.html"class="btn text-light">Payments information</a>
-		<a href="ContactUs.html"class="btn text-light">ContactUs</a>
+		<a href="ContactUs.html"class="btn text-light">Contact Us</a>
 		
 		</div>
         <div class="text-center text-light">
 		&#169; All text are taken from <span><a href="https://www.nozhaschools.com" class=" text-light text-decoration-none">nozhaschools</a>   </span>  </div>
 </footer> 
+<script src="/Scripts/Acformvaild.js"></script>
 </body>
 </html>
