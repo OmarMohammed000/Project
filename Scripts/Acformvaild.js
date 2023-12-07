@@ -45,13 +45,13 @@ form.addEventListener('submit', (e)=>{
     }
 //    converting the array into a number and 0 index is where the year is  so this make sure that the kid is atleast 5 and not 18
 
-    if(parseInt(dateArray[0]) >= 2019 || parseInt(dateArray[0])<=2007){
-        dateError.innerHTML=`
-        <div class=" alert alert-danger w-50" role="alert"">
-        Please enter a vaild date 
-        </div>
-        `
-        console.log("error y3m ")
+    if (parseInt(dateArray[0]) < 2004 || parseInt(dateArray[0]) > 2019) {
+        dateError.innerHTML = `
+            <div class="alert alert-danger w-50" role="alert">
+                Please enter a valid date between 2004 and 2019.
+            </div>
+        `;
+
         messages.push(3);
     }
 // this pervent submisson form going throught to the server side 
